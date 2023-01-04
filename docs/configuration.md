@@ -86,8 +86,8 @@ See [the Code documentation]({{ site.baseurl }}{% link docs/ui-components/code.m
 ```yaml
 # Aux links for the upper right navigation
 aux_links:
-  "Just the Docs on GitHub":
-    - "//github.com/just-the-docs/just-the-docs"
+  "Robot_MuSHR on GitHub":
+    - "//github.com/anr-multitrans/Robot_MuSHR"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false
