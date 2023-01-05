@@ -6,14 +6,14 @@ description: "Just the Docs is a responsive Jekyll theme with built-in search th
 permalink: /
 ---
 
-# Focus on writing good documentation
+# Guidance for MuSHR Users
 {: .fs-9 }
 
-Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
+This guide is intended to give some help to those who are exposed to the MuSHR platform in the MultiTrans project.
 {: .fs-6 .fw-300 }
 
 [Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[View it on GitHub][Just the Docs repo]{: .btn .fs-5 .mb-4 .mb-md-0 }
+[View it on GitHub][Robot MuSHR repo]{: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
@@ -49,7 +49,7 @@ See the theme [README][Just the Docs README] for how to use the theme as a gem w
 
 ## About the project
 
-Just the Docs is &copy; 2017-{{ "now" | date: "%Y" }} by [Patrick Marsceill](http://patrickmarsceill.com).
+MuSHR Guidebook is &copy; by [MuSHR](https://mushr.io/).
 
 ### License
 
@@ -60,7 +60,7 @@ Just the Docs is distributed by an [MIT license](https://github.com/anr-multitra
 When contributing to this repository, please first discuss the change you wish to make via issue,
 email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [our GitHub repo](https://github.com/anr-multitrans/Robot_MuSHR#contributing).
 
-#### Thank you to the contributors of Just the Docs!
+#### Thank you to the contributors of MuSHR Guidebook!
 
 <ul class="list-style-none">
 {% for contributor in site.github.contributors %}
@@ -69,12 +69,6 @@ email, or any other method with the owners of this repository before making a ch
   </li>
 {% endfor %}
 </ul>
-
-### Code of Conduct
-
-Just the Docs is committed to fostering a welcoming community.
-
-[View our Code of Conduct](https://github.com/anr-multitrans/Robot_MuSHR/tree/main/CODE_OF_CONDUCT.md) on our GitHub repository.
 
 ----
 
@@ -90,7 +84,7 @@ Just the Docs is committed to fostering a welcoming community.
 [source file for this page]: https://github.com/anr-multitrans/Robot_MuSHR/blob/main/index.md
 [Just the Docs Template]: https://just-the-docs.github.io/just-the-docs-template/
 [Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[Just the Docs repo]: https://github.com/anr-multitrans/Robot_MuSHR
+[Robot MuSHR repo]: https://github.com/anr-multitrans/Robot_MuSHR
 [Just the Docs README]: https://github.com/anr-multitrans/Robot_MuSHR/blob/main/README.md
 [GitHub Pages]: https://pages.github.com/
 [Template README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
