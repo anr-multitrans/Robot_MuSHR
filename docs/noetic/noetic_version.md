@@ -5,6 +5,8 @@ layout: default
 title: Noetic version of MuSHR
 nav_order: 4
 has_children: true
-permalink: /docs/Noetic
+permalink: /docs/noetic
 ---
 
+# [](#header-1)MuSHR with Noetic
+![](../../assets/images/noetic.png)
