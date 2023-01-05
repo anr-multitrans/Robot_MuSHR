@@ -3,7 +3,7 @@ noteId: "7173eaa18d2211ed8656897383d7b310"
 tags: []
 layout: "default"
 title: "Markdown kitchen sink"
-nav_order: 11
+nav_order: 5
 
 ---
 
