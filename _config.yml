@@ -13,8 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Just the Docs
-description: A Jekyll theme for documentation
+title: MuSHR Guidebook
+description: A guidebook for MuSHR
 baseurl: "/Robot_MuSHR" # the subpath of your site, e.g. /blog
 url: "https://anr-multitrans.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -91,7 +91,7 @@ heading_anchors: true
 
 # Aux links for the upper right navigation
 aux_links:
-  "Just the Docs on GitHub":
+  "Robot_MuSHR on GitHub":
     - "//github.com/anr-multitrans/Robot_MuSHR"
 
 # Makes Aux links open in a new tab. Default is false
@@ -103,7 +103,7 @@ nav_sort: case_sensitive # Capital letters sorted before lowercase
 
 # External navigation links
 nav_external_links:
-  - title: Just the Docs on GitHub
+  - title: Robot_MuSHR on GitHub
     url: https://github.com/anr-multitrans/Robot_MuSHR
 
 # Footer content
