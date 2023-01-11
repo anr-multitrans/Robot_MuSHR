@@ -66,16 +66,45 @@ You can edit code outsideor inside the docker container. Other files made inside
 open a new terminal and run:
 ```
 $ mushr_noetic
-$ source .bashrc && cd catkin_ws && catkin build 
 ```
 The first time running this command will take some time to download the Docker image. If the prefix switches to root, the installation was successful.
 
 {: .note}
-```$ mushr_noetic``` will generate a new container, and if you want to use the same container, you can run ```$ docker start [container ID]```. View Container ID run ```docker ps```.
+```$ mushr_noetic``` will generate a new container, and if you want to use the same container, you can run ```$ docker start [container ID]```. View Container ID run ```$ docker ps```.
+
+In the same terminal (within the Docker container), build the MuSHR software stack. (First run or when there is an update.)
+```$ source .bashrc && cd catkin_ws && catkin build```
 
 ## Foxglove Studio
+We can use Foxglove Studio to visualize our robot and map.
 
+### Downloading Foxglove Studio
 {: .note }
 Make sure [foxglove](https://foxglove.dev/download) is the latest version.
+
+### Import layout
+Open Foxglove Studio, and click the “Layouts” button on the left panel (second from top) and then click Import layout button pictured below.
+![](../../assets/images/foxglove_layout (1).png)
+
+Import the preset layout from: ```mushr/mushr_utils/foxglove/foxglove_layout.json```.
+
+### MuSHR panel extension
+Navigate to the Extensions tab (bottom icon on the left panel) and install the MushrTeleop extension from the Marketplace.
+![](../../assets/images/foxglove_extention.jpg)
+
+### Connecting to Data With Foxglove Studio
+Start the Docker container. In the same terminal (within the Docker container), start up the simulator with the command:
+```
+$ roslaunch mushr_sim teleop.launch
+```
+After starting up, the simulator should print out a line similar to ```Rosbridge WebSocket server started at ws://0.0.0.0:9090```
+
+In Foxglove, click the top button in the sidebar, labeled Data source. Then select the Plus button in the left panel. This should open up an interface to connect to data. Click the Open Connection button. 
+![](../../assets/images/import_data.png)
+
+Select Rosbridge (ROS 1 & ROS 2) as shown below.
+![](../../assets/images/new_connection.png)
+Fill out the WebSocket URL with the url and port that the simulator output before.
+Then, click Open in the bottom right corner.
 
 ---
