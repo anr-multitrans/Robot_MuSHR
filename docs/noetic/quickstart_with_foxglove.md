@@ -9,3 +9,10 @@ nav_order: 1
 
 # [](#header-1)Quickstart with Foxglove
 ![](../../assets/images/foxglove.jpg)
+
+## Table of contents
+{: .no_toc .text-delta }
+
+## MuSHR Docker Container
+
+## Foxglove Studio
