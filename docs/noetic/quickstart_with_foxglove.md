@@ -40,14 +40,14 @@ First, install [Docker](https://docs.docker.com/get-docker/) and [Docker Compose
 If on Linux, follow the [post install](https://docs.docker.com/engine/install/linux-postinstall/) steps to make sure you can run Docker without root privileges.
 
 ### Installing MuSHR Docker Container
-Clone the MuSHR repository at catkin_ws/src
+#### Clone the MuSHR repository at catkin_ws/src
 
 ```
 $ mkdir -p catkin_ws/src
 $ cd catkin_ws/src
 $ git clone --branch noetic https://github.com/prl-mushr/mushr.git
 ```
-### Run the installation script
+#### Run the installation script
 
 ```
 $ ./mushr/mushr_utils/install/mushr_install.bash
@@ -55,9 +55,23 @@ $ ./mushr/mushr_utils/install/mushr_install.bash
 It will prompt you with two questions.
 
 - For running the MuSHR simulator, the answers should be no, no.
-- For running the MuSHR racecar, the answers should be yes, no.
+- For running the MuSHR racecar, the answers should be ?, ?.
 
 ---
+
+{: .note }
+You can edit code outsideor inside the docker container. Other files made inside the docker container will not persist unless you commit.
+
+### Run the MuSHR Docker Container
+open a new terminal and run:
+```
+$ mushr_noetic
+$ source .bashrc && cd catkin_ws && catkin build 
+```
+The first time running this command will take some time to download the Docker image. If the prefix switches to root, the installation was successful.
+
+{: .note}
+```$ mushr_noetic``` will generate a new container, and if you want to use the same container, you can run ```$ docker start [container ID]```. View Container ID run ```docker ps```.
 
 ## Foxglove Studio
 
