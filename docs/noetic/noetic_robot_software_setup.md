@@ -2,7 +2,7 @@
 noteId: "fbe68fc08d1e11ed8656897383d7b310"
 tags: []
 layout: default
-title: Noetic Robot Software Setup
+title: Robot Software Setup
 parent: Noetic version of MuSHR
 nav_order: 2
 ---
@@ -39,7 +39,7 @@ You need to set the car up with a static IP if you want to install additional so
 #TODO
 
 ## Setup Docker & Install MuSHR stack
-Robot setup is similar to the simulation setup. Follow the following from the [MuSHR simulation setup]{https://anr-multitrans.github.io/Robot_MuSHR/docs/noetic/quickstart_with_foxglove/}.
+Robot setup is similar to the simulation setup. Follow the following from the [MuSHR simulation setup](https://anr-multitrans.github.io/Robot_MuSHR/docs/noetic/quickstart_with_foxglove/).
 
 ## Launching Teleoperation
 First, all ROS commands must be run inside a docker container. If you need to create multiple terminal sessions we recommend entering one docker container then using tmux (pre-installed). That way you only need to remember to run mushr_noetic once.
@@ -65,6 +65,6 @@ You should see the lidar spinning and be able to steer with the controller. (Act
 ## Visualization
 After starting up, the robot terminal should print out a line similar to ```Rosbridge WebSocket server started at ws://0.0.0.0:9090```.
 
-Unlike simulation, visualization usually is run on a separate computer (though you can install Foxglove on the robot). From the [Foxglov]{https://anr-multitrans.github.io/Robot_MuSHR/docs/noetic/Foxglove/} tutorial complete the following steps on your separate visualization computer.
+Unlike simulation, visualization usually is run on a separate computer (though you can install Foxglove on the robot). From the [Foxglov](https://anr-multitrans.github.io/Robot_MuSHR/docs/noetic/Foxglove/) tutorial complete the following steps on your separate visualization computer.
 
 Fill out the WebSocket URL with the robot’s IP and port that the simulator output before.
