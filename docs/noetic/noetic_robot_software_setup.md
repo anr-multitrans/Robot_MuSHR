@@ -49,7 +49,7 @@ Or if you are using Visual Studio Code, it is even better, because you can check
 Turn on the car and vesc by plugging their batteries in. Enter the docker container.
 ```$ mushr_noetic```
 or
-```$ docker start [container ID]```
+```$ docker exec -it [CONTAINER_ID] bash```
 if you don't want to start a new container.
 
 Then in the same terminal (within the Docker container), run teleop.
@@ -68,3 +68,4 @@ After starting up, the robot terminal should print out a line similar to ```Rosb
 Unlike simulation, visualization usually is run on a separate computer (though you can install Foxglove on the robot). From the [Foxglov](https://anr-multitrans.github.io/Robot_MuSHR/docs/noetic/Foxglove/) tutorial complete the following steps on your separate visualization computer.
 
 Fill out the WebSocket URL with the robot’s IP and port that the simulator output before.
+

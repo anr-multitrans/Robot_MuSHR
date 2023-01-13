@@ -68,7 +68,7 @@ $ mushr_noetic
 The first time running this command will take some time to download the Docker image. If the prefix switches to root, the installation was successful.
 
 {: .note}
-```$ mushr_noetic``` will generate a new container, and if you want to use the same container, you can run ```$ docker start [container ID]```. View Container ID run ```$ docker ps```.
+```$ mushr_noetic``` will generate a new container, and if you want to use the same container, you can run ```$ docker exec -it [CONTAINER_ID] bash```. View Container ID run ```$ docker ps```.
 
 In the same terminal (within the Docker container), build the MuSHR software stack. (First run or when there is an update.)
 ```$ source .bashrc && cd catkin_ws && catkin build```
