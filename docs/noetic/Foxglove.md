@@ -2,12 +2,12 @@
 noteId: "01c34620934311ed80cf874835c8bf87"
 tags: []
 layout: default
-title: Autonomous Navigation
+title: Foxglove
 parent: Noetic version of MuSHR
 nav_order: 3
 ---
 
-# Foxglov
+# Foxglove
 
 ![](../../assets/images/foxglove.jpg)
 
