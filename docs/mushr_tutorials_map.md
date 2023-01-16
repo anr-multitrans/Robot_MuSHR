@@ -7,4 +7,4 @@ nav_order: 2
 ---
 
 # [](#header-1)Mushr Tutorials Mind Map
-![](../../assets/images/Mushr_tutorials.png)
+![](../assets/images/Mushr_tutorials.png)
