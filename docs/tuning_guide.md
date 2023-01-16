@@ -84,7 +84,7 @@ We will instead the length of a half cirlce, so 2 * R. Calculting this with the 
 
 There are two links can fate your caculating:
 - [Angle Conversion Calculator](https://www.calculatorsoup.com/calculators/conversions/angle.php)
-- [Equation Calculator] (https://www.symbolab.com/solver/equation-calculator/%5Cfrac%7B0.44%7D%7B2%5Ccdot%20sin%5Cleft(arctan%5Cleft\(%20%5Cfrac%7Btan%5Cleft(0.34%5Cright)%7D%7B2%7D%5Cright)%5Cright)%7D%5Ccdot2?or=input)
+- [Equation Calculator](https://www.symbolab.com/solver/equation-calculator/%5Cfrac%7B0.44%7D%7B2%5Ccdot%20sin%5Cleft(arctan%5Cleft(%20%5Cfrac%7Btan%5Cleft(0.34%5Cright)%7D%7B2%7D%5Cright)%5Cright)%7D%5Ccdot2?or=input)
 
 
 **Before tuning:**
