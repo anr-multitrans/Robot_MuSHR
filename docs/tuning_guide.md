@@ -16,9 +16,11 @@ The alignment of the hardware is critical for them to be able to work. With incr
 3. Find a relatively open space to run your car. We’ll be driving it straight for ~9ft (3m) and turning in a semi-circle of diameter ~6ft (2m).
 
 The file will be located at:
-```~/catkin_ws/src/mushr_base/vesc/vesc_main/config/racecar-uw-nano/vesc.yaml.```
+``` ~/catkin_ws/src/mushr_base/vesc/vesc_main/config/racecar-uw-nano/vesc.yaml. ```
+
 The file will look like this:
-```
+
+```yaml
 # erpm (electrical rpm) = speed_to_erpm_gain * speed (meters / second) + speed_to_erpm_offset
 #-4614
 speed_to_erpm_gain: -2000
@@ -82,7 +84,7 @@ We will instead the length of a half cirlce, so 2 * R. Calculting this with the 
 
 There are two links can fate your caculating:
 - [Angle Conversion Calculator](https://www.calculatorsoup.com/calculators/conversions/angle.php)
-- [Equation Calculator] (https://www.symbolab.com/solver/equation-calculator/%5Cfrac%7B0.44%7D%7B2%5Ccdot%20sin%5Cleft(arctan%5Cleft(%20%5Cfrac%7Btan%5Cleft(0.34%5Cright)%7D%7B2%7D%5Cright)%5Cright)%7D%5Ccdot2?or=input)
+- [Equation Calculator] (https://www.symbolab.com/solver/equation-calculator/%5Cfrac%7B0.44%7D%7B2%5Ccdot%20sin%5Cleft(arctan%5Cleft\(%20%5Cfrac%7Btan%5Cleft(0.34%5Cright)%7D%7B2%7D%5Cright)%5Cright)%7D%5Ccdot2?or=input)
 
 
 **Before tuning:**
