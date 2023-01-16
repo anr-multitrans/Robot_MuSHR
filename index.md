@@ -74,5 +74,4 @@ email, or any other method with the owners of this repository before making a ch
 [GitHub Pages]: https://pages.github.com/
 [Template README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
 [GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-<!-- [customize]: {{ site.baseurl }}{% link docs/customization.md %} -->
 [use the template]: https://github.com/just-the-docs/just-the-docs-template/generate
