@@ -137,4 +137,3 @@ To set a pose target, click on ```Set Goal``` button on the bottom right of the 
 ![](../../assets/images/set_goal.png)
 
 The [following video](https://mushr.io/tutorials/autonomous-navigation/final_vid_stack.mp4) demonstrates the process of starting and running the stack in sim. In the real world, the difference would be the launch files being executed, and possibly the requirement to set the initial pose estimate.
-[![Alternate Text]({../../assets/images/auto.png})]({../../assets/images/final_vid_stack.mp4} "Link Title")
