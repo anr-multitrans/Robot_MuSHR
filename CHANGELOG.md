@@ -1,4 +1,0 @@
----
-title: CHANGELOG
-layout: default
----
