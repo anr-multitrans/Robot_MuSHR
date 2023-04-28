@@ -8,3 +8,4 @@ nav_order: 2
 
 # [](#header-1)Mushr Tutorials Mind Map
 ![](../assets/images/Mushr_tutorials.png)
+<!-- TODO: add link of Mushr Tutorials -->

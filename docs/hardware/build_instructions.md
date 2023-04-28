@@ -11,3 +11,5 @@ nav_order: 1
 
 ## Hardware Overview
 ![](../../assets/images/hardware_overview.png)
+
+<!-- TODO: link to hardware building-->

@@ -35,8 +35,12 @@ You need to set the car up with a static IP if you want to install additional so
 #TODO
 
 ## Connect the bluetooth controller
+Connect to PS4 controller, for the first time: [Build Instructions - MuSHR: The UW Open Racecar Project](https://mushr.io/hardware/build_instructions/#:~:text=Note%20the%20column,dialog.%20(Fig.%2015.7)) 
 
-#TODO
+{: .note }
+if there already are “wireless controller”, remove them first, because all the controllers use the same name.
+
+![](../../assets/images/controller.png)
 
 ## Setup Docker & Install MuSHR stack
 Robot setup is similar to the simulation setup. Follow the following from the [MuSHR simulation setup](https://anr-multitrans.github.io/Robot_MuSHR/docs/noetic/quickstart_with_foxglove/).
