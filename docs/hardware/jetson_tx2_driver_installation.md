@@ -14,10 +14,13 @@ First, download the user guidebook from [TX2 user guide][def3], and go to the "*
 {: .note }
 Supported host operating systems are: Ubuntu Linux x64 Version 18.04 or 16.04
 
-You will be asked to make an account before downloading NVIDIA SDK Manage.
+TX2 connecting system layout
+![](/home/li/GitHub/anr-multitrans/Robot_MuSHR/assets/images/jetson_tx2_scan-2.jpg)
 
 <!-- TODO: (Rem1: In the second part, use only the USB Micro-B to USB A to connect the car and the computer, and the AC adapter)
 (Rem2: Which are the Power and Force Recovery buttons ? pictures ?) -->
+
+You will be asked to make an account before downloading NVIDIA SDK Manage.
 
 Install Jetson Software with SDK Manager with this [link][def2] 
 ```
