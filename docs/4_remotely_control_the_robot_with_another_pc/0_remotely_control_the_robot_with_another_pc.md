@@ -7,3 +7,4 @@ nav_order: 4
 has_children: true
 ---
 
+# Remotely control the robot with another PC
