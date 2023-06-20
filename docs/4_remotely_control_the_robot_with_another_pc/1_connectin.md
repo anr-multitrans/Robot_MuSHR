@@ -7,3 +7,4 @@ parent: Remotely control the robot with another PC
 nav_order: 1
 ---
 
+# Connecting

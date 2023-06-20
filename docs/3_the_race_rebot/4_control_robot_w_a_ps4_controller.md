@@ -7,3 +7,4 @@ parent: The race rebot
 nav_order: 4
 ---
 
+# Control robot with a PS4 controller

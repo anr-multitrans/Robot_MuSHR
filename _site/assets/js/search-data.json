@@ -150,221 +150,227 @@
     "relUrl": "/docs/4_remotely_control_the_robot_with_another_pc/2_visualization_by_foxglove/"
   },"25": {
     "doc": "Auto-driving",
+    "title": "Machine Learning",
+    "content": " ",
+    "url": "/Robot_MuSHR/docs/5_machine_learning/3_auto_driving/#machine-learning",
+    "relUrl": "/docs/5_machine_learning/3_auto_driving/#machine-learning"
+  },"26": {
+    "doc": "Auto-driving",
     "title": "Auto-driving",
     "content": " ",
     "url": "/Robot_MuSHR/docs/5_machine_learning/3_auto_driving/",
     "relUrl": "/docs/5_machine_learning/3_auto_driving/"
-  },"26": {
+  },"27": {
     "doc": "Foxglove",
     "title": "Foxglove",
     "content": ". This tutorial is for MacOS or Linux users only. ",
     "url": "/Robot_MuSHR/docs/2_mushr/3_foxglove/",
     "relUrl": "/docs/2_mushr/3_foxglove/"
-  },"27": {
+  },"28": {
     "doc": "Foxglove",
     "title": "Foxglove Studio",
     "content": "We can use Foxglove Studio to visualize our robot and map. Downloading Foxglove Studio . Make sure foxglove is the latest version. Import layout . Open Foxglove Studio, and click the “Layouts” button on the left panel (second from top) and then click Import layout button pictured below. Import the preset layout from: mushr/mushr_utils/foxglove/foxglove_layout.json. MuSHR panel extension . Navigate to the Extensions tab (bottom icon on the left panel) and install the MushrTeleop extension from the Marketplace. Connecting to Data With Foxglove Studio . Start the Docker container. In the same terminal (within the Docker container), start up the simulator with the command: . $ roslaunch mushr_sim teleop.launch . After starting up, the simulator should print out a line similar to Rosbridge WebSocket server started at ws://0.0.0.0:9090 . In Foxglove, click the top button in the sidebar, labeled Data source. Then select the Plus button in the left panel. This should open up an interface to connect to data. Click the Open Connection button. Select Rosbridge (ROS 1 &amp; ROS 2) as shown below. Fill out the WebSocket URL with the url and port that the simulator output before. Then, click Open in the bottom right corner. ",
     "url": "/Robot_MuSHR/docs/2_mushr/3_foxglove/#foxglove-studio",
     "relUrl": "/docs/2_mushr/3_foxglove/#foxglove-studio"
-  },"28": {
+  },"29": {
     "doc": "Robot Software Setup",
     "title": "Robot Software Setup",
     "content": "This tutorial will get your car up and running teleoperation. ",
     "url": "/Robot_MuSHR/docs/2_mushr/3_robot_software_setup/",
     "relUrl": "/docs/2_mushr/3_robot_software_setup/"
-  },"29": {
+  },"30": {
     "doc": "Robot Software Setup",
     "title": "Software Overview",
     "content": ". The following are required before continuing with installing the necessary libraries. | SD card flashed with the latest [NVIDIA Jetpack]{https://developer.nvidia.com/embedded/jetpack} image. | Internet (either WiFi or ethernet) | Monitor, HDMI cable, mouse, keyboard | . ",
     "url": "/Robot_MuSHR/docs/2_mushr/3_robot_software_setup/#software-overview",
     "relUrl": "/docs/2_mushr/3_robot_software_setup/#software-overview"
-  },"30": {
+  },"31": {
     "doc": "Robot Software Setup",
     "title": "Booting Up",
     "content": ". | Power on and boot the Jetson. The green light on the right side should turn on. | Plug a monitor, keyboard, and mouse into the car. | Follow the on-screen prompts to complete setup of the Jetson Nano operating system. we suggest using the following values: Username: robot Name: robot Computer Name: goose . | . ",
     "url": "/Robot_MuSHR/docs/2_mushr/3_robot_software_setup/#booting-up",
     "relUrl": "/docs/2_mushr/3_robot_software_setup/#booting-up"
-  },"31": {
+  },"32": {
     "doc": "Robot Software Setup",
     "title": "Setup Wi-Fi",
     "content": "You need to set the car up with a static IP if you want to install additional software on the car, or be able to use the internet on your laptop while connected to the car. But most computers do not have a static IP. #TODO . ",
     "url": "/Robot_MuSHR/docs/2_mushr/3_robot_software_setup/#setup-wi-fi",
     "relUrl": "/docs/2_mushr/3_robot_software_setup/#setup-wi-fi"
-  },"32": {
+  },"33": {
     "doc": "Robot Software Setup",
     "title": "Connect the bluetooth controller",
     "content": "Connect to PS4 controller, for the first time: Build Instructions - MuSHR: The UW Open Racecar Project . if there already are “wireless controller”, remove them first, because all the controllers use the same name. ",
     "url": "/Robot_MuSHR/docs/2_mushr/3_robot_software_setup/#connect-the-bluetooth-controller",
     "relUrl": "/docs/2_mushr/3_robot_software_setup/#connect-the-bluetooth-controller"
-  },"33": {
+  },"34": {
     "doc": "Robot Software Setup",
     "title": "Setup Docker &amp; Install MuSHR stack",
     "content": "Robot setup is similar to the simulation setup. Follow the following from the MuSHR simulation setup. ",
     "url": "/Robot_MuSHR/docs/2_mushr/3_robot_software_setup/#setup-docker--install-mushr-stack",
     "relUrl": "/docs/2_mushr/3_robot_software_setup/#setup-docker--install-mushr-stack"
-  },"34": {
+  },"35": {
     "doc": "Robot Software Setup",
     "title": "Launching Teleoperation",
     "content": "First, all ROS commands must be run inside a docker container. If you need to create multiple terminal sessions we recommend entering one docker container then using tmux (pre-installed). That way you only need to remember to run mushr_noetic once. Or if you are using Visual Studio Code, it is even better, because you can check and modifiy the files in it, and create as much terminals as you want. For the first time, you can connet to the car, start the MuSHR_noetic, and then connet to the continar running on the car. After that, Visual Studio Code will remenber it that next time you can start the continar directly with it. Turn on the car and vesc by plugging their batteries in. Enter the docker container. $ mushr_noetic or $ docker exec -it [CONTAINER_ID] bash if you don’t want to start a new container. Then in the same terminal (within the Docker container), run teleop. $ roslaunch mushr_base teleop.launch . You should see the lidar spinning and be able to steer with the controller. (Activate all sensors by default.) . ",
     "url": "/Robot_MuSHR/docs/2_mushr/3_robot_software_setup/#launching-teleoperation",
     "relUrl": "/docs/2_mushr/3_robot_software_setup/#launching-teleoperation"
-  },"35": {
+  },"36": {
     "doc": "Robot Software Setup",
     "title": "Teleoperation (manual driving)",
     "content": ". #TODO . ",
     "url": "/Robot_MuSHR/docs/2_mushr/3_robot_software_setup/#teleoperation-manual-driving",
     "relUrl": "/docs/2_mushr/3_robot_software_setup/#teleoperation-manual-driving"
-  },"36": {
+  },"37": {
     "doc": "Robot Software Setup",
     "title": "Visualization",
     "content": "After starting up, the robot terminal should print out a line similar to Rosbridge WebSocket server started at ws://0.0.0.0:9090. Unlike simulation, visualization usually is run on a separate computer (though you can install Foxglove on the robot). From the Foxglov tutorial complete the following steps on your separate visualization computer. Fill out the WebSocket URL with the robot’s IP and port that the simulator output before. ",
     "url": "/Robot_MuSHR/docs/2_mushr/3_robot_software_setup/#visualization",
     "relUrl": "/docs/2_mushr/3_robot_software_setup/#visualization"
-  },"37": {
+  },"38": {
     "doc": "Set up Docker & Install the MuSHR stack",
     "title": "Set up Docker &amp; Install the MuSHR stack",
     "content": " ",
     "url": "/Robot_MuSHR/docs/3_the_race_rebot/3_set_up_docker_&_install_the_mushr_stack/#set-up-docker--install-the-mushr-stack",
     "relUrl": "/docs/3_the_race_rebot/3_set_up_docker_&_install_the_mushr_stack/#set-up-docker--install-the-mushr-stack"
-  },"38": {
+  },"39": {
     "doc": "Set up Docker & Install the MuSHR stack",
     "title": "Setup Docker",
     "content": " ",
     "url": "/Robot_MuSHR/docs/3_the_race_rebot/3_set_up_docker_&_install_the_mushr_stack/#setup-docker",
     "relUrl": "/docs/3_the_race_rebot/3_set_up_docker_&_install_the_mushr_stack/#setup-docker"
-  },"39": {
+  },"40": {
     "doc": "Set up Docker & Install the MuSHR stack",
     "title": "Install MuSHR stack",
     "content": " ",
     "url": "/Robot_MuSHR/docs/3_the_race_rebot/3_set_up_docker_&_install_the_mushr_stack/#install-mushr-stack",
     "relUrl": "/docs/3_the_race_rebot/3_set_up_docker_&_install_the_mushr_stack/#install-mushr-stack"
-  },"40": {
+  },"41": {
     "doc": "Set up Docker & Install the MuSHR stack",
     "title": "Set up Docker & Install the MuSHR stack",
     "content": " ",
     "url": "/Robot_MuSHR/docs/3_the_race_rebot/3_set_up_docker_&_install_the_mushr_stack/",
     "relUrl": "/docs/3_the_race_rebot/3_set_up_docker_&_install_the_mushr_stack/"
-  },"41": {
+  },"42": {
     "doc": "Stop the container and shut down the robot",
     "title": "Stop the container and shut down the robot",
     "content": " ",
     "url": "/Robot_MuSHR/docs/4_remotely_control_the_robot_with_another_pc/3_stop_the_container_&_shut_down_the_robot/",
     "relUrl": "/docs/4_remotely_control_the_robot_with_another_pc/3_stop_the_container_&_shut_down_the_robot/"
-  },"42": {
+  },"43": {
     "doc": "Autonomous Navigation",
     "title": "Autonomous Navigation",
     "content": "Initialize and operate MuSHRs out-of-the-box autonomous navigation stack! By the end of the tutorial, the car should be able to autonomously navigate around known obstacles on a known map. If you are operating in simulation and use the particle filter for localization, we do not recommend testing with the sandbox.yaml default map as the localization system struggles in an open environment (all positions look the same!). ",
     "url": "/Robot_MuSHR/docs/2_mushr/4_autonomous_navigation/",
     "relUrl": "/docs/2_mushr/4_autonomous_navigation/"
-  },"43": {
+  },"44": {
     "doc": "Autonomous Navigation",
     "title": "Navigation Stack Overview",
     "content": ". | Receding Horizon Controller (RHC) Node This node is responsible for motion planning and generating controls(steering, speed) for the car. | Localization Node This node is implemented using a method called Particle Filtering which relies primarily on a data stream from the laser scanner. | Planner Node This node generates a plan that the RHC controller will follow. | . ",
     "url": "/Robot_MuSHR/docs/2_mushr/4_autonomous_navigation/#navigation-stack-overview",
     "relUrl": "/docs/2_mushr/4_autonomous_navigation/#navigation-stack-overview"
-  },"44": {
+  },"45": {
     "doc": "Autonomous Navigation",
     "title": "Installing the Navigation Stack",
     "content": "The docker container may already have the required packages pre-installed. These instructions have been provided in case you need to reinstall the packages from scratch. Download the packages for the RHC, Particle Filter and Global Planner: . # Go to your catkin workspace $ cd ~/catkin_ws/src # Clone the RHC node $ git clone git@github.com:prl-mushr/mushr_rhc.git # Clone the Particle Filter node $ git clone git@github.com:prl-mushr/mushr_pf.git # Install [SBPL](http://sbpl.net) for the global planner $ sudo apt-get install ros-noetic-sbpl # Install the Global Planner (this is for Jetson Xavier NX or sim use) $ git clone git@github.com:prl-mushr/mushr_gp.git # If you're using the jetson nano, use the mushr_gprm planner: $ git clone git@github.com:prl-mushr/mushr_gprm.git # Make $ cd ~/catkin_ws &amp;&amp; catkin_make . You also need to download all dependencies for the mush_rhc. The reason why there are two planners (mushr_gp and mushr_gprm) is because mushr_gp is too resource intensive to be run on the jetson nano 4GB variant. However, if the desktop/laptop computer remains connected and in range of the MuSHR car, you can run mushr_gp on the computer instead as they share the same ROS master. If you need the planner to run on the jetson nano, we recommend using the mushr_gprm package. For the Jetson Xavier NX or when running on the sim exclusively, mushr_gp will work. Both repositories contain ROS packages that reproduce the desired functionality. You need only concern yourself with each package’s launch files to use them effectively. You can find the launch files in each package’s launch directory. ",
     "url": "/Robot_MuSHR/docs/2_mushr/4_autonomous_navigation/#installing-the-navigation-stack",
     "relUrl": "/docs/2_mushr/4_autonomous_navigation/#installing-the-navigation-stack"
-  },"45": {
+  },"46": {
     "doc": "Autonomous Navigation",
     "title": "Starting the navigation stack",
     "content": "Starting the docker image . If you’re operating on the robot, you’ll need to SSH into it. As we are running the entire system from docker, the first thing to do is to start the docker image. To do this, execute: Turn on the car and vesc by plugging their batteries in. Enter the docker container. $ mushr_noetic or $ docker exec -it [CONTAINER_ID] bash if you don’t want to start a new container. If you will use tmux, once you’ve ssh’d into your robot and started the docker image, activate tmux: $ tmux . Note: If the map you are using is very large map (&gt;100x100 meters)–size inclusive of the unknown region–then the controller will be stuck sampling points. Save yourself the headache and shrink/crop your map before you begin. Starting the system . On the MuSHR robot . Launch teleop.launch. All these basic features are handled by a single launch file called teleop.launch. $ roslaunch mushr_base teleop.launch . launch the map_server: . # Make sure mushr/mushr_base/mushr_base/mushr_base/maps has your map # and mushr_base/launch/includes/map_server.launch is set to your map $ roslaunch mushr_base map_server.launch . launch the localization node: $ roslaunch mushr_pf real.launch . Wait for the node to initialize: . $ Vesc callback called for first time.... $ Initialization complete . activate the RHC node: $ roslaunch mushr_rhc real.launch . Wait for the code to initialize: . MPC Control Node Initialized . Finally, launch the global planner node (use the planner appropriate for your system): $ roslaunch mushr_gp real.launch or $ roslaunch mushr_gprm real.launch . Wait for it to initialize: . [ INFO] [1658309032.479218601]: Planner ROS node constructed. Need to initialize state [ INFO] [1658309032.644907822]: Resizing the map [ INFO] [1658309033.229219658]: Environment initialized [ INFO] [1658309033.261994212]: Updated costmap . In simulation . When running in simulation, the steps are more or less the same as those for the real car, with the difference being that . | We use the mushr_sim package to start the teleop.launch | Absence of the particle filter (not necessary in simulation) | Differences in the names of the launch files (instead of real.launch we use sim.launch) | . Launch teleop.launch form mushr_sim: $ roslaunch mushr_sim teleop.launch . activate the RHC node and Wait for the code to initialize. $ roslaunch mushr_rhc sim.launch . Finally, launch the global planner node and Wait for it to initialize: $ roslaunch mushr_gp sim.launch . Running the navigation stack . To operate the navigation stack, we will use foxglove to send pose targets to the vehicle. When operating in the real world, the pose estimate of the car may be incorrect. You can correct this by providing the particle filter with the correct pose estimate using the Set Pose Estimate button on the bottom right of the foxglove window and then using the button to publish clicked points. In simulation, you may want to set the starting pose of the car at a certain point. To do this, click the Set Pose button on the bottom right of the foxglove window and use Publish point to publish a point or Publish Pose to publish a pose for the car: . To set a pose target, click on Set Goal button on the bottom right of the foxglove window and use Publish pose to publish a goal pose for the car: . The following video demonstrates the process of starting and running the stack in sim. In the real world, the difference would be the launch files being executed, and possibly the requirement to set the initial pose estimate. ",
     "url": "/Robot_MuSHR/docs/2_mushr/4_autonomous_navigation/#starting-the-navigation-stack",
     "relUrl": "/docs/2_mushr/4_autonomous_navigation/#starting-the-navigation-stack"
-  },"46": {
+  },"47": {
     "doc": "Control robot with a PS4 controller",
     "title": "Control robot with a PS4 controller",
     "content": " ",
     "url": "/Robot_MuSHR/docs/3_the_race_rebot/4_control_robot_w_a_ps4_controller/",
     "relUrl": "/docs/3_the_race_rebot/4_control_robot_w_a_ps4_controller/"
-  },"47": {
+  },"48": {
     "doc": "Install ROS1",
     "title": "Install ROS1",
     "content": " ",
     "url": "/Robot_MuSHR/docs/2_mushr/5_install_ros1/",
     "relUrl": "/docs/2_mushr/5_install_ros1/"
-  },"48": {
+  },"49": {
     "doc": "Install ROS1",
     "title": "For Ubuntu",
     "content": " ",
     "url": "/Robot_MuSHR/docs/2_mushr/5_install_ros1/#for-ubuntu",
     "relUrl": "/docs/2_mushr/5_install_ros1/#for-ubuntu"
-  },"49": {
+  },"50": {
     "doc": "Install ROS1",
     "title": "For Windows Users",
     "content": " ",
     "url": "/Robot_MuSHR/docs/2_mushr/5_install_ros1/#for-windows-users",
     "relUrl": "/docs/2_mushr/5_install_ros1/#for-windows-users"
-  },"50": {
+  },"51": {
     "doc": "Tuning",
     "title": "Tuning Guide",
     "content": "The alignment of the hardware is critical for them to be able to work. With increased use, there will be some looseness or misalignment on the race car. Regular adjustments are very important, especially if you find that it doesn’t work well no matter what. If incorrectly tuned, the commands applied by your autonomous controller may not correspond to what’s being executed on the physical hardware, making it difficult to debug issues with the controller. Requirements . | A computer that can ssh into your car. | A tape measure. | Find a relatively open space to run your car. We’ll be driving it straight for ~9ft (3m) and turning in a semi-circle of diameter ~6ft (2m). | . The file will be located at: ~/catkin_ws/src/mushr_base/vesc/vesc_main/config/racecar-uw-nano/vesc.yaml. The file will look like this: . # erpm (electrical rpm) = speed_to_erpm_gain * speed (meters / second) + speed_to_erpm_offset #-4614 speed_to_erpm_gain: -2000 speed_to_erpm_offset: 0.0 [...omited for brevity] # servo value (0 to 1) = steering_angle_to_servo_gain * steering angle (radians) + steering_angle_to_servo_offset steering_angle_to_servo_gain: 1.2135 steering_angle_to_servo_offset: 0.55 . ",
     "url": "/Robot_MuSHR/docs/3_the_race_rebot/5_tuning/#tuning-guide",
     "relUrl": "/docs/3_the_race_rebot/5_tuning/#tuning-guide"
-  },"51": {
+  },"52": {
     "doc": "Tuning",
     "title": "Steering Angle Offset",
     "content": "This offset sets the default servo position when the car is driving straight. You will be changing the variable: steering_angle_to_servo_offset. Tuning loop: While the car doesn’t drive straight, do the following procedure: . | Start teleop: $ roslaunch mushr_base teleop.launch | Drive car in a straight line a few times. It’s never going to be perfectly straight, so as long as it goes straight most of the time, it’ll be fine. | Adjust steering_angle_offset in vesc.yaml. Increase the offset if the car veers too much left, decrease if it veers too much right. | Stop teleop (Ctrl-C in the window you started teleop.launch in) and go back to Step 1. | . Usually this value is between 0.4 and 0.6 . ",
     "url": "/Robot_MuSHR/docs/3_the_race_rebot/5_tuning/#steering-angle-offset",
     "relUrl": "/docs/3_the_race_rebot/5_tuning/#steering-angle-offset"
-  },"52": {
+  },"53": {
     "doc": "Tuning",
     "title": "Speed to ERPM Gain",
     "content": "This gain converts velocity to ERPM. You will be changing the variable: speed_to_erpm_gain. The conversion from velocity to ERPM and steering angle to servo position is a linear function of the input command: output = f(command) = gain * command + bias . Before tuning:Extend your tape measure to around 9-10 ft on the floor. Tuning loop: . | Place car at the base of the tape measure with the back wheelbase (indicated with a white line) lined up with 0. ~ | Start teleop. $ roslaunch mushr_base teleop.launch | Open another terminal on the car and run the command: $ rostopic echo /car/vesc/odom/pose/pose/position/x This will echo all the odometry information – how far the car has driven (in meters) in the x direction since teleop started. The value should be 0.0 at the start, as the car hasn’t moved yet. | Drive the car forward about 7-8 ft. The car will drive slightly further as it decelerates and stops. Make sure you only drive forward, not altering the servo position, otherwise you’ll have both x and y directional changes. | Record the distance traveled and convert to meters. | Compare to output of the rostopic echo command’s x value. If the reported distance traveled is larger than the actual, decrease the gain. If the reported distance is smaller, increase the gain. At the begining increasing or decreasing by 500 should allow you to quickly hone in on the value. | Stop teleop. Go back to step 1 if the values are not sufficiently close (within 2-3 cm). | . This value can vary, but it should be on the order of thousands (2000-5000) . ",
     "url": "/Robot_MuSHR/docs/3_the_race_rebot/5_tuning/#speed-to-erpm-gain",
     "relUrl": "/docs/3_the_race_rebot/5_tuning/#speed-to-erpm-gain"
-  },"53": {
+  },"54": {
     "doc": "Tuning",
     "title": "Steering Angle Gain",
     "content": "This gain takes a steering angle in radians and converts it to a servo position. You will be changing the variable: steering_angle_to_servo_gain. In order to find the desired turn radius, we look to the kinematic car model. At low enough speeds (avoiding slipping and skidding) this model farily accurately represents the movement of the car. The turn radius is: R = L/2sin(beta), where L is the length of the car (0.3 meters), and beta is arctan(1/2 * tan(delta)), where delta is the steering angle. We will be setting the steering angle to the max (0.34 by default). We will instead the length of a half cirlce, so 2 * R. Calculting this with the defaults, comes out to 1.722 meters (67.79 inches). If you tweak the max steering angle, or change the chassis, you will have to recompute this number. There are two links can fate your caculating: . | Angle Conversion Calculator | Equation Calculator | . Before tuning: Extend your tape measure to around 7-8 ft on the floor. Tuning loop: . | Place car at the base of the tape measure with the back wheelbase (indicated with a white line) lined up with 0. | Start teleop. $ roslaunch mushr_base teleop.launch | Command the steering wheel max in whichever direction the measurement tape is. (Left and right are to be done separately) | Run the car such that the car has run over the tape and the back wheel is on the tape (see image). ~ | Record the distance. The goal distance is 1.722 meters (67.79 inches). If it overshot, increase the gain, if it undershot, decrease the gain. | . This value should be around 1.1-1.3 . ",
     "url": "/Robot_MuSHR/docs/3_the_race_rebot/5_tuning/#steering-angle-gain",
     "relUrl": "/docs/3_the_race_rebot/5_tuning/#steering-angle-gain"
-  },"54": {
+  },"55": {
     "doc": "Tuning",
     "title": "Tuning",
     "content": " ",
     "url": "/Robot_MuSHR/docs/3_the_race_rebot/5_tuning/",
     "relUrl": "/docs/3_the_race_rebot/5_tuning/"
-  },"55": {
+  },"56": {
     "doc": "Problem Solving",
     "title": "Hardware Problem Solving",
     "content": " ",
     "url": "/Robot_MuSHR/docs/3_the_race_rebot/7_problem_solving/#hardware-problem-solving",
     "relUrl": "/docs/3_the_race_rebot/7_problem_solving/#hardware-problem-solving"
-  },"56": {
+  },"57": {
     "doc": "Problem Solving",
     "title": "How Do I rescue over-drained LiPo batteries?",
     "content": "The usable voltage range for a standard lipo battery cell is 3.2v to 4.2v. Any lower than 3.2v and the battery may be permanently damaged. Any higher than 4.2v and you significantly increase the risk of a battery bursting into flames. Check battery voltage . | Connect the main and the sub plugs of your LiPo battery to your charger. Note the positive(+, red) and negative(-, black) sides of the sub-plug. | Select User Program - Cell Meter, press ENTER. | Now the voltage information will showed on the screen. The total voltage for all cells, the highest and the lowest cell voltage. | Press ENTER once more, the voltage for each cell will show on the scree. | . When the battery voltage is too low to charge, you should replace the battery as it is no-longer going to function properly. But you might also be-able to rescue that battery and use it for a bit longer. If you attempt to rescue a battery using these instructions you do so at your own risk. If you are not comfortable with the possibility that your battery may catch fire, you may just want to discard the battery. Rescue over-drained LiPo batteries . REF . | Connect the main plug of your LiPo battery to your charger and chose the User Program - Select NiMH. Start charge at the lowest current(0.1A) possible. Select a voltage the matches your LiPo battery’s nominal voltage. | After a minute or two your battery should recover to about 3.3 volts per cell. To check this simply read the total voltage of your battery and divide that by the number of cells. | When the total voltage is equal to about 3.3 volts per cell you can stop the NiMH charging and switch to LiPo charging. | Connect bothe the main and the sub plug of your LiPo battery to your charger. Select User Program - Select LiPo. Then select LiPo balance charge at 0.5C (A = mAh * C / 1000) rating and a voltage the matches your LiPo battery’s nominal voltage. This will take longer than charging at 1C but is safer. | Once the balance charge has completed balancing you should have a fully recovered LiPo battery. | . If you are unable to restore the voltage by this method, your battery may be permanently damaged and it is recommended not to use it again. ",
     "url": "/Robot_MuSHR/docs/3_the_race_rebot/7_problem_solving/#how-do-i-rescue-over-drained-lipo-batteries",
     "relUrl": "/docs/3_the_race_rebot/7_problem_solving/#how-do-i-rescue-over-drained-lipo-batteries"
-  },"57": {
+  },"58": {
     "doc": "Problem Solving",
     "title": "Problem Solving",
     "content": " ",
     "url": "/Robot_MuSHR/docs/3_the_race_rebot/7_problem_solving/",
     "relUrl": "/docs/3_the_race_rebot/7_problem_solving/"
-  },"58": {
+  },"59": {
     "doc": "Home",
     "title": "Guidance for MuSHR Users",
     "content": "This guide is intended to give some help to those who are exposed to the MuSHR platform in the MultiTrans project. Get started now View it on GitHub . … . … . ",
     "url": "/Robot_MuSHR/#guidance-for-mushr-users",
     "relUrl": "/#guidance-for-mushr-users"
-  },"59": {
+  },"60": {
     "doc": "Home",
     "title": "Getting started",
     "content": "… . … . … . ",
     "url": "/Robot_MuSHR/#getting-started",
     "relUrl": "/#getting-started"
-  },"60": {
+  },"61": {
     "doc": "Home",
     "title": "About the project",
     "content": "MuSHR Guidebook is © by MuSHR. License . Just the Docs is distributed by an MIT license. Contributing . When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in our GitHub repo. Thank you to the contributors of MuSHR Guidebook! . ",
     "url": "/Robot_MuSHR/#about-the-project",
     "relUrl": "/#about-the-project"
-  },"61": {
+  },"62": {
     "doc": "Home",
     "title": "Home",
     "content": " ",
