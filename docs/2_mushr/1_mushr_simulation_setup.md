@@ -11,7 +11,7 @@ nav_order: 1
 Learn how to simulate the MuSHR Car.
 
 {: .note }
-This tutorial is for MacOS or Linux users only.
+This tutorial is for Linux or MacOS users only.
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -32,7 +32,9 @@ First, install [Docker](https://docs.docker.com/get-docker/) and [Docker Compose
 | Docker Compose | 1.29+   |
 
 {: .warning }
-> Check your [JetPack version](https://developer.nvidia.com/embedded/jetpack-archive), if it comes with Docker (e.g. version 4.6.1), do not reinstall the Docker, just install Docker-Compose.
+> This tutorial does not apply on Jetson. Because some JetPack has Docker built in (Check your [JetPack version](https://developer.nvidia.com/embedded/jetpack-archive)), reinstalling it will cause problems. Please go to [the race robot](https://anr-multitrans.github.io/Robot_MuSHR/docs/hardware) section.
+
+
 
 {: .note }
 If on Linux, follow the [post install](https://docs.docker.com/engine/install/linux-postinstall/) steps to make sure you can run Docker without root privileges.
@@ -55,8 +57,6 @@ It will prompt you with two questions.
 - For running the MuSHR simulator, the answers should be no, no.
 - For running the MuSHR racecar, when ask “Are you installing on robot and need all the sensor drivers? (y/n)” respond “y” so that the sensor drivers are installed.
 
----
-
 {: .note }
 You can edit code outsideor inside the docker container. Other files made inside the docker container will not persist unless you commit.
 
@@ -71,6 +71,9 @@ The first time running this command will take some time to download the Docker i
 ```$ mushr_noetic``` will generate a new container, and if you want to use the same container, you can run ```$ docker exec -it [CONTAINER_ID] bash```. View Container ID run ```$ docker ps```.
 
 In the same terminal (within the Docker container), build the MuSHR software stack. (First run or when there is an update.)
-```$ source .bashrc && cd catkin_ws && catkin build```
+
+```
+$ source .bashrc && cd catkin_ws && catkin build
+```
 
 ---

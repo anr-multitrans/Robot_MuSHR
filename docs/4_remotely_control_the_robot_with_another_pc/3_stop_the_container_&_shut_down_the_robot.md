@@ -8,3 +8,18 @@ nav_order: 3
 ---
 
 # Stop the container and shut down the robot
+## 1. first stop the container:
+- In the bash of the container, run
+```
+$exit
+```
+- Or in the bash of the robot, run 
+```
+$docker stop [container_ID]
+```
+You will lose the connection in a few seconds.
+## 2. Then shut down the TX2(robot), In the bash of the robot:
+```
+$ sudo shutdown -P now
+```
+You will lose the connection in a few seconds too.

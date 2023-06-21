@@ -3,8 +3,8 @@ noteId: "fbe68fc08d1e11ed8656897383d7b310"
 tags: []
 layout: default
 title: Robot Software Setup
-parent: MuSHR
-nav_order: 2
+parent: The race rebot
+nav_order: 3
 ---
 
 # [](#header-1)Robot Software Setup

@@ -2,13 +2,15 @@
 noteId: "a7634d508d2611ed8656897383d7b310"
 tags: []
 layout: default
-title: Flashing Jetson TX2
+title: Jetson
 parent: The race rebot
 nav_order: 2
 ---
 
-# [](#header-1)Jetson TX2 Driver Installation
-## 1. Flash TX2 with your laptop
+# [](#header-1)Jetson Driver Installation
+## Jetson TX2
+
+### 1. Flash TX2 with your laptop
 First, download the user guidebook from [TX2 user guide][def3], and go to the "**how to install jetpack**" part and follow the instructions.
 
 {: .note }
@@ -30,7 +32,7 @@ Password: prl_robot
 
 <!-- TODO: Do we have to do step 4 ? -->
 
-## 2. Connect TX2
+### 2. Connect TX2
 Once done the step 1, connect TX2 with the screen, the mouse, and the keyboard. Now you can do anything such as:
 
 **Update ubuntu software**
@@ -41,6 +43,7 @@ $ sudo apt-get upgrade
 A window will pop up and there will be a question about configuring docker.io : “Automatically restart Docker deamon” ? -> the answer is YES 
 ![][def]
 
+## Jetson Nano
 
 [def]: ../../assets/images/tx2_flashing_docker.jpg
 [def2]: https://docs.nvidia.com/sdk-manager/install-with-sdkm-jetson/index.html

@@ -6,10 +6,10 @@ description: "Just the Docs is a responsive Jekyll theme with built-in search th
 permalink: /
 ---
 
-# Guidance for MuSHR Users
+# Robotics and Simulation Guidebook
 {: .fs-9 }
 
-This guide is intended to give some help to those who are exposed to the MuSHR platform in the MultiTrans project.
+[Mushr](https://mushr.io/)-based robotics and simulation guidebook.
 {: .fs-6 .fw-300 }
 
 [Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
@@ -17,28 +17,13 @@ This guide is intended to give some help to those who are exposed to the MuSHR p
 
 ---
 
-{: .warning }
-> ... 
-
-...
-
-## Getting started
-<!-- TODO: add contents -->
-...
-
-{: .note }
-...
-
-{: .note }
-...
-
 ## About the project
 
-MuSHR Guidebook is &copy; by [MuSHR](https://mushr.io/).
 
 ### License
+Some of the Mushr-related content in this guidebook is &copy; by [MuSHR](https://mushr.io/).
 
-Just the Docs is distributed by an [MIT license](https://github.com/anr-multitrans/Robot_MuSHR/tree/main/LICENSE.txt).
+The web template(Just the Docs) is distributed by an [MIT license](https://github.com/anr-multitrans/Robot_MuSHR/tree/main/LICENSE.txt).
 
 ### Contributing
 

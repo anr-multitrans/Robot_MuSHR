@@ -4,7 +4,7 @@ tags: []
 layout: default
 title: Autonomous Navigation
 parent: MuSHR
-nav_order: 4
+nav_order: 3
 ---
 
 # [](#header-1)Autonomous Navigation
