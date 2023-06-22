@@ -26,7 +26,7 @@ For flashing, you don’t have to connect the display, keyboard, and mouse, only
 [19] - Power Button
 
 [20] - Force Recovery Button
-![](../assets/images/jetson.jpg)
+![](../../assets/images/jetson.jpg)
 
 **Step 4**: Use SDK Manager to select and install desired components.
 1. Go to [SDK Manager documentation](https://docs.nvidia.com/sdk-manager/index.html) and choose to [Install Jetson Software with SDK Manager](https://docs.nvidia.com/sdk-manager/install-with-sdkm-jetson/index.html).
@@ -44,7 +44,7 @@ $ sudo apt-get update
 $ sudo apt-get upgrade
 ```
 A window will pop up and there will be a question about configuring docker.io: “Automatically restart Docker daemon”? -> The answer is YES 
-![](../assets/images/cuda.jpg)
+![](../../assets/images/cuda.jpg)
 
 ### 3. Boot and reboot
 - Boot: press the power button
