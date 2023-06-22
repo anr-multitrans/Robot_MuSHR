@@ -1,3 +1,9 @@
+---
+noteId: "5c6bb570110711ee87667f52d9ab60ce"
+tags: []
+
+---
+
 # Contributor Covenant Code of Conduct
 
 ## Our Pledge
